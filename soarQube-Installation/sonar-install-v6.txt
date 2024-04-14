@@ -18,7 +18,7 @@ sudo service sshd restart
 # 4. Install JAVA pre-requisite
 cd /opt
 sudo dnf -y install unzip wget git
-sudo dnf install  java-11-openjdk-devel
+sudo dnf install java -y
 # 5. Download the SonarqQube Server software. 
 sudo wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-7.8.zip
 sudo unzip sonarqube-7.8.zip
