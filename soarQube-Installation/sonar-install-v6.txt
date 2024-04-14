@@ -4,13 +4,14 @@
 
 #As a good security practice, SonarQuber Server is not advised to run sonar service as a root user, 
 #so create a new user called sonar and grant sudo access to manage sonar services as follows
-# 1. create a sonar 
+
+# 1. create a sonar user
 sudo useradd sonar
+
 # 2. Grand sudo access to sonar user
 sudo echo "sonar ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/sonar
-sudo chown -R sonar:sonar /opt/sonarqube/
-sudo chmod -R 775 /opt/sonarqube/
 sudo su - sonar
+
 ## 3. Enable PasswordAuthentication
 sudo sed -i "/^[^#]*PasswordAuthentication[[:space:]]no/c\PasswordAuthentication yes" /etc/ssh/sshd_config
 sudo service sshd restart
@@ -19,13 +20,15 @@ sudo service sshd restart
 cd /opt
 sudo dnf -y install unzip wget git
 sudo dnf install java -y
+
 # 5. Download the SonarqQube Server software. 
 sudo wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-7.8.zip
 sudo unzip sonarqube-7.8.zip
 sudo rm -rf sonarqube-7.8.zip
 sudo mv sonarqube-7.8 sonarqube
+sudo chown -R sonar:sonar /opt/sonarqube
 
-# start sonarqube as sonar user using relative path
+# 6. start sonarqube as sonar user using relative path
 sudo su - sonar  
 cd /opt/sonarqube/bin/linux-x86-64/ 
 sh sonar.sh start
