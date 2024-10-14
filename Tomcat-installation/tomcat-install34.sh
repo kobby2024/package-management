@@ -4,7 +4,7 @@ sudo hostnamectl set-hostname tomcat
 #sudo su - ec2-user
 cd /opt
 # install Java JDK 1.8+ as a pre-requisit for tomcat to run.
-sudo yum install git wget vim unzip -y
+sudo yum install git wget vim unzip zip nano -y
 sudo yum install java-1.8.0-openjdk-devel -y
 # install wget unzip packages.
 sudo yum install wget unzip -y
