@@ -10,12 +10,12 @@ sudo yum install java-1.8.0-openjdk-devel -y
 sudo yum install wget unzip -y
 sudo yum install vim -y
 sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.96/bin/apache-tomcat-9.0.96.tar.gz
-sudo unzip apache-tomcat-9.0.96.zip
-sudo rm -rf apache-tomcat-9.0.96.zip
+sudo tar -xvf apache-tomcat-9.0.96.tar.gz
+sudo rm -rf apache-tomcat-9.0.96.tar.gz
 ### rename tomcat for good naming convention
 sudo mv apache-tomcat-9.0.96 tomcat9
 ### assign executable permissions to the tomcat home directory
-sudo chmod 775 -R /opt/tomcat9
+sudo chmod 777 -R /opt/tomcat9
 sudo chown ec2-user -R /opt/tomcat9
 ### start tomcat
 sh /opt/tomcat9/bin/startup.sh
