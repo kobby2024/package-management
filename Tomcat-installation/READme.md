@@ -1,5 +1,5 @@
 #  **<span style="color:green">Devops Xpress USA.</span>**
-### **<span style="color:green">Contacts: +1437 215 2483<br> WebSite : <http://Devops Xpress.com/></span>
+### **<span style="color:green">Contacts:<br> WebSite : <http://DevopsXpress.com/></span>
 
 ## Apache Tomcat Installation And Setup In AWS EC2 Redhat Instance.
 ##### Prerequisite
