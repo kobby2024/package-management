@@ -1,6 +1,5 @@
-#  **<span style="color:green">Landmark Technologies, Ontario, Canada.</span>**
-### **<span style="color:green">Contacts: +1437 215 2483<br> WebSite : <http://mylandmarktech.com/></span>**
-### **Email: mylandmarktech@gmail.com**
+#  **<span style="color:green">Devops Xpress USA.</span>**
+### **<span style="color:green">Contacts: +1437 215 2483<br> WebSite : <http://Devops Xpress.com/></span>
 
 ## Apache Tomcat Installation And Setup In AWS EC2 Redhat Instance.
 ##### Prerequisite
