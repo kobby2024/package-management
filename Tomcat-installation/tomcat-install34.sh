@@ -1,6 +1,5 @@
 #!/bin/sh
-# change hostname to tomcat
-sudo hostnamectl set-hostname tomcat
+sudo yum update -y
 #sudo su - ec2-user
 cd /opt
 # install Java JDK 1.8+ as a pre-requisit for tomcat to run.
