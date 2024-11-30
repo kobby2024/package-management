@@ -7,8 +7,8 @@ sudo yum install git wget vim unzip -y
 sudo yum install java-1.8.0-openjdk-devel -y
 # install wget unzip packages.
 sudo yum install wget unzip -y
-
-sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.93/bin/apache-tomcat-9.0.97.zip
+#Download the tomcat software
+sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.97/bin/apache-tomcat-9.0.97.zip
 sudo unzip apache-tomcat-9.0.97.zip
 sudo rm -rf apache-tomcat-9.0.97.zip
 ### rename tomcat for good naming convention
