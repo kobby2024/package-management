@@ -1,6 +1,6 @@
 #  **<span style="color:green">Devops Xpress USA.</span>**
 ### **<span style="color:green">Contacts:<br> WebSite : <http://DevopsXpress.com/></span>
-
+#### Check for current version of tomcat: https://tomcat.apache.org/
 ## Apache Tomcat Installation And Setup In AWS EC2 Redhat Instance.
 ##### Prerequisite
 + AWS Acccount.
